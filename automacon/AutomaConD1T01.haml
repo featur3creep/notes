@@ -1,42 +1,41 @@
 %h2 Bots Not Cattle
-%i Josh Berkus
-%i gh: jberkus tw: @fuzzychef
+%i Josh Berkus - gh: jberkus - twit: @fuzzychef
+%br
+%a{:href => "http://jberkus.github.io/pdf_presos/bots_not_cattle_automacon.pdf"} Slide Link
+%br 
 %p When working on HA Postgres, the tools available at the time left database automation on the side of the road.  This lead to thinking about the third wave of automation.
 %p The Waves of Automation
-%p 1. Software Packages + BASH
-%p 2. Configuration Management
-%p 3. Containers
-%p
+%ol{:type => "1"}
+	%li Software Packages + BASH
+	%li Configuration Management
+	%li Containers
 %p But aren't containers really just another form of configuration management?
 %p So what is the real third wave?
-%p
-%p Treat your servers like cattle, not like pets.
+%i Treat your servers like cattle, not like pets.
 %p Pets require
-%p - Constant Attention
-%p - Care, Feeding
-%p
+%ul{:type => "square"}
+	%li Constant Attention
+	%li Care, Feeding
 %p Cattle have some problems
-%p - They are dumb
-%p - They only move in one direction
-%p - They require some smart central management
-%p
+%ul{:type => "square"}
+	%li They are dumb
+	%li They only move in one direction
+	%li They require some smart central management
 %p That central management has limits.
-%p - Infrastructure scale
-%p - People Scale (Dev/Ops Split)
-%p - Communication Lag
-%p - Application Event Response
-%p
+%ul{:type => "square"}
+	%li Infrastructure scale
+	%li People Scale (Dev/Ops Split)
+	%li Communication Lag
+	%li Application Event Response
 %p But while playing Robo Rally, an idea was born -- what if these cattle were reactive?
 %p What if our servers were intelligent bots, capable of reacting to deploy, config, availability events and were programmed to do the right thing in each case?
-%p
 %p Bot Rules:
-%p - Self-configuring
-%p - Keeping local state
-%p - Accepting of a distributed config
-%p - Having Event-Driven Response
-%p
+%ul{:type => "square"}
+	%li Self-configuring
+	%li Keeping local state
+	%li Accepting of a distributed config
+	%li Having Event-Driven Response
 %p There are a few Bot-Ish Platforms - Postgres, Chef, Kubernetes, Mesos
-%p
 %p So, boticize your apps.  Make them smart.  Make them react to their world.
 %p Devs NEED TO AUTOMATE!
 %p "We're all Devops now!"
